@@ -11,7 +11,7 @@ with DAG(
     catchup=False,
 ) as dag:
     
-    def select_fruit();
+    def select_fruit():
         fruit = ['바나나','사과','오렌지','아보카도']
         rand_int = random.randint(0,3)
         print(fruit[rand_int])

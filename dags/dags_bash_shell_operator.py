@@ -11,7 +11,7 @@ with DAG(
 ) as dag:
     bash_t1 = BashOperator(
         task_id="bash_t1",
-        bash_command="/opt/airflow/plugins/shell/test.sh",
+        bash_command="/opt/airflow/plugins/shell/test.sh test지롱",
     )    
     
     bash_t1

@@ -16,10 +16,10 @@ with DAG(
         rand_int = random.randint(0,3)
         print(fruit[rand_int])
 
-    py_t1 = PythonOperator(
-        task_id = 'py_t1',
+    py_t2 = PythonOperator(
+        task_id = 'py_t2',
         python_callable=select_fruit
     )
     
-    py_t1
+    py_t2
 

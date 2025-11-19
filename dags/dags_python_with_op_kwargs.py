@@ -16,7 +16,7 @@ with DAG(
         python_callable=regist2,
         name='kim',
         sex='man',
-        op_kwargs={'email:kim@gmail:com','phone:111.1111.1111'}
+        op_kwargs={'email':'kim@gmail:com','phone':'111.1111.1111'}
     )
 
     regist_t2

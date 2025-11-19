@@ -12,9 +12,11 @@ with DAG(
 ) as dag:
     
     regist_t2 = PythonOperator(
-        task_id = regist_t2,
-        python_callable=regist_t2,
-        op_kwargs=['kim','man','kim@gmail.com','111.1111.1111']
+        task_id = 'regist_t2',
+        python_callable=regist2,
+        name='kim',
+        sex='man',
+        op_kwargs={'email:kim@gmail:com','phone:111.1111.1111'}
     )
 
     regist_t2

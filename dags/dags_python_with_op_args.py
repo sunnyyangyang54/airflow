@@ -16,3 +16,5 @@ with DAG(
         python_callable=regist,
         op_args=['yang','man','kr','seoul']
     )
+    
+    regist_t1

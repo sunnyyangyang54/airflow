@@ -1,4 +1,4 @@
-fromfrom airflow.sdk import DAG
+from airflow.sdk import DAG
 import pendulum
 import datetime
 from airflow.providers.standard.operators.python import PythonOperator
@@ -12,8 +12,8 @@ with DAG(
 ) as dag:
     
     regist_t2 = PythonOperator(
-        task_id = regist_t2
-        python_callable=regist_t2
+        task_id = regist_t2,
+        python_callable=regist_t2,
         op_kwargs=['kim','man','kim@gmail.com','111.1111.1111']
     )
 
